@@ -9,15 +9,17 @@ jobs:
     steps:
       - name: Pull Code
         uses: actions/checkout@v2
+      - name: Setup dotnet core
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '3.1.x'
       - name: Print Current Directory
         run: pwd
       - name: List Files in Directory
         run: ls
       - name: Check dotnet cli
-        run: cd TrickingLibrary.Api
-      - name: Check dotnet cli
         run: dotnet build
       - name: List Files in Directory
-        run: ls -r
+        run: ls TrickingLibrary.Api/ -r
       - name: Check npm cli
         run: npm -v
