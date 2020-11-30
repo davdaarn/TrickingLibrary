@@ -14,7 +14,7 @@ jobs:
       - name: List Files in Directory
         run: ls
       - name: Check dotnet cli
-        run: cd TrickingLibrary/Api
+        run: cd TrickingLibrary.Api
       - name: Check dotnet cli
         run: dotnet build
       - name: List Files in Directory
