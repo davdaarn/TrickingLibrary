@@ -10,7 +10,7 @@
       "request": "launch",
       "preLaunchTask": "build",
       // If you have changed target frameworks, make sure to update the program path.
-      "program": "${workspaceFolder}/TrickingLibrary.Api/bin/Debug/net3.1/TrickingLibrary.Api.dll",
+      "program": "${workspaceFolder}/TrickingLibrary.Api/bin/Debug/net5.0/TrickingLibrary.Api.dll",
       "args": [],
       "cwd": "${workspaceFolder}/TrickingLibrary.Api",
       "stopAtEntry": false,
